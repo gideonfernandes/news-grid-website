@@ -41,16 +41,14 @@ p {
 	margin-bottom: 1rem;
 }
 
-/* Utilities Styling */
-.container {
-	padding-left: calc((100vw - 1100px) / 2);
-	padding-right: calc((100vw - 1100px) / 2);
+img {
+	max-width: 100%;
 }
 
-.category {
-  --sports-color: #f99500;
-  --ent-color: #a66bbe;
-  --tech-color: #009cff;
+/* Utilities Styling */
+.container {
+	padding-left: calc((100vw - 1100px) / 2) !important;
+	padding-right: calc((100vw - 1100px) / 2) !important;
 }
 
 .p-1 { padding: 1rem !important }
@@ -71,9 +69,9 @@ p {
 	background-color: var(--primary-color);
 }
 
-.label-sport { background-color: #f99500 }
-.label-ent { background-color: #a66bbe }
-.label-tech { background-color: #009cff }
+.label-sport { background-color: #f99500 !important }
+.label-ent { background-color: #a66bbe !important }
+.label-tech { background-color: #009cff !important }
 
 .btn {
 	display: inline-block;
@@ -82,9 +80,19 @@ p {
 	background-color: var(--primary-color);
 }
 
-.btn-secondary { background: var(--secondary-color) }
-.btn-light { background: var(--light-color) }
-.btn-dark { background: var(--dark-color) }
+.btn-secondary { background-color: var(--secondary-color) !important }
+.btn-light { background-color: var(--light-color) !important }
+.btn-dark { background-color: var(--dark-color) !important }
+
+.bg-primary {
+	color: white !important;
+	background-color: var(--primary-color) !important;
+}
+
+.bg-dark {
+	color: white !important;
+	background-color: var(--dark-color) !important;
+}
 
 .btn:hover {
 	opacity: 0.9;
@@ -162,4 +170,34 @@ header #showcase > div > h1 {
 
 header #showcase > div > p {
 	color: white;
+}
+
+main #articles-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+main #articles-container article {
+	background-color: white;
+	padding: 1rem;
+	border: 1px solid #ccc;
+}
+
+main #articles-container article[class="bg-dark"] > h3 > a,
+main #articles-container article[class="bg-primary"] > h3 > a {
+	color: white;
+}
+
+main #articles-container > *:first-child,
+main #articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+main #articles-container > *:last-child {
+	grid-column: 2 / span 2;
 }
