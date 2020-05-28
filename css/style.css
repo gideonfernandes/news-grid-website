@@ -78,6 +78,8 @@ img {
 	padding: 0.6rem 1.6rem;
 	color: white;
 	background-color: var(--primary-color);
+	border: 0;
+	cursor: pointer;
 }
 
 .btn-secondary { background-color: var(--secondary-color) !important }
@@ -181,7 +183,6 @@ main #articles-container {
 main #articles-container article {
 	background-color: white;
 	padding: 1rem;
-	border: 1px solid #ccc;
 }
 
 main #articles-container article[class="bg-dark"] > h3 > a,
@@ -201,3 +202,46 @@ main #articles-container > *:last-child {
 main #articles-container > *:last-child {
 	grid-column: 2 / span 2;
 }
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+}
+
+footer > div > img {
+	width: 76%;
+	margin-bottom: 0.4rem;
+}
+
+footer > div > form > input {
+	width: 100%;
+	margin-bottom: 0.45rem;
+}
+
+footer > div#copy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.9rem; 
+	grid-column: 1 / span 4;
+	background-color: #424242;
+}
+
+footer > div#copy > p{
+	font-size: 0.8rem;
+	margin-bottom: 0;
+}
+
+footer > div > ul > li {
+	padding: 0.8rem 0 0.5rem 0;
+	border-bottom: 1px dotted #707070;
+}
+
+footer > div > h2,
+footer > div > h3,
+footer > div > p,
+footer > div > ul > li > a {
+	color: white;
+}
+
