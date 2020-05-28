@@ -120,6 +120,7 @@ header #navbar {
 
 header #navbar .logo {
 	width: 180px;
+	padding-left: 10px;
 }
 
 header #navbar .social {
@@ -170,6 +171,7 @@ header #showcase::before {
 
 header #showcase > div {
 	z-index: 1;
+	padding: 1rem;
 }
 
 header #showcase > div > h1 {
@@ -179,6 +181,10 @@ header #showcase > div > h1 {
 
 header #showcase > div > p {
 	color: white;
+}
+
+main > h2 {
+	padding-left: 10px;
 }
 
 main #articles-container {
@@ -288,7 +294,6 @@ main#article > #page-container {
 }
 
 main#article > #page-container > article {
-	border: 1px solid #ccc;
 	grid-column: 1 / span 6;
 	grid-row: 1 / span 4;
 	background-color: white;
@@ -312,7 +317,6 @@ main#article > #page-container > article > div.meta > .small-label {
 }
 
 main#article > #page-container > aside {
-	border: 1px solid #ccc;
 	grid-column: 7 / span 8;
 }
 
