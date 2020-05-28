@@ -58,6 +58,8 @@ img {
 .py-3 { padding-top: 3rem !important; padding-bottom: 3rem !important }
 .py-4 { padding-top: 4rem !important; padding-bottom: 4rem !important }
 
+.l-heading { font-size: 3rem !important }
+
 .small-label {
 	display: inline-block;
 	font-size: 0.6rem;
@@ -245,3 +247,30 @@ footer > div > ul > li > a {
 	color: white;
 }
 
+/* About Page */
+main#about > #page-container {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 1rem;
+}
+
+main#about > #page-container > article {
+	grid-column: 1 / span 6;
+	grid-row: 1 / span 2;
+	background-color: white;
+}
+
+main#about > #page-container > aside {
+	grid-column: 7 / span 8;
+}
+
+main#about > #page-container > aside > h2 {
+	color: white;
+}
+
+main#about > #page-container > aside > a {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
